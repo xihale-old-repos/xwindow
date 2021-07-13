@@ -27,4 +27,3 @@ class xwindow {
 		};
 	}
 }
-a=new xwindow();
