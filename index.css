@@ -10,11 +10,14 @@ xwindow{
 	top: 10%;
 	left: 20%;
 	border-radius: 15px;
+	border-style: solid;
+	border-width: 0.4px;
+	border-color: #85cd64;
 }
 xtitle{
 	position: absolute;
 	height: 7%;
-	width: 95%;
+	width: 90%;
 	text-align: center;
 	background-color: var(--xtitle-background);
 	font-size: 150%;
@@ -30,20 +33,27 @@ xtitle:hover{
 xclose{
 	position: absolute;
 	right: 0;
-	width: 5%;
+	width: 10%;
 	height: 7%;
 	border-radius: 0px 15px 0px 0px;
 	background-color: var(--xtitle-background);
 }
-xclose:hover{
+xclose>.xcloser:hover{
 	background-color: red;
 }
-xclose:hover svg path{
+xclose>.xcloser{
+	border-radius: 0px 15px 0px 0px;
+}
+xclose>.xsmaller:hover{
+	background-color: #a7e3e3;
+}
+xclose>.xcloser:hover svg path{
 	fill: white;
 }
-xclose>svg{
-	width: 100%;
+xclose>div{
+	width: 50%;
 	height: 100%;
+	float:left;
 }
 xbody{
 	position: absolute;
